@@ -1,168 +1,62 @@
 ---
-title: API Reference
+title: The TwentyThree API
 
 language_tabs:
-  - shell
-  - ruby
   - python
+  - shell: cURL
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a>
+  - <a href='https://www.twentythree.net/help'>Help Center</a>
+  - <a href='https://login.twentythree.net'>Login to your Twentythree Site</a>
 
 includes:
+  - howto
   - errors
 
 search: true
 ---
 
-# Introduction
+# The TwentyThree API
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+This document describes the REST API for the TwentyThree Visual Marketing
+Platform. The API is designed to be usable in a multitude of contexts:
 
-We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+- Browsers, via javascript, to augment or assist with video functionality
+- From our player framework
+- 3rd party integrations, from Single Sign-On to all-inclusive integrations
 
-This example API documentation page was created with [Slate](https://github.com/tripit/slate). Feel free to edit it and use it as a base for your own API's documentation.
+## OAuth Authentication
 
-# Authentication
-
-> To authorize, use this code:
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-```
+> SOMETHING IMPORTANT
+> LOLBURGER
 
 ```python
-import kittn
 
-api = kittn.authorize('meowmeowmeow')
+import gravity
+
+gravity.fly()
 ```
 
 ```shell
-# With shell, you can just pass the correct header with each request
-curl "api_endpoint_here"
-  -H "Authorization: meowmeowmeow"
+curl "http://www.yoursite.com/api/gravity/" --data "action=fly"
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+Aute ipsum reprehenderit cillum velit deserunt nostrud dolore dolor amet velit. Aute reprehenderit adipisicing sunt fugiat aliqua consectetur commodo aliqua irure veniam. Qui officia eu sit aliqua est nisi esse aliqua mollit elit nulla in duis incididunt Lorem. Eu anim excepteur qui cillum magna labore qui ad irure ex ex. Commodo sint culpa sunt ea quis duis velit do culpa tempor exercitation nostrud pariatur. Et tempor officia dolor consectetur tempor nostrud tempor eu mollit sit minim. Culpa sit excepteur laboris officia commodo irure pariatur. Velit aute tempor mollit ea consequat aute non reprehenderit ullamco dolor excepteur tempor esse ullamco id elit sit.
 
-Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our [developer portal](http://example.com/developers).
-
-Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:
-
-`Authorization: meowmeowmeow`
+Irure duis quis ullamco laboris eu aute tempor ipsum esse qui exercitation pariatur id consectetur elit quis. Non enim do esse deserunt velit elit ut. Et sint laboris sunt exercitation duis deserunt sint consequat deserunt consectetur aliqua consequat labore ex.
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+Hmmm, this is a notice
 </aside>
 
-# Kittens
-
-## Get All Kittens
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
-
-```shell
-curl "http://example.com/api/kittens"
-  -H "Authorization: meowmeowmeow"
-```
-
-> The above command returns JSON structured like this:
-
-```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
-```
-
-This endpoint retrieves all kittens.
-
-### HTTP Request
-
-`GET http://example.com/api/kittens`
-
-### Query Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+<aside class="warning">
+Aaaand a warning
+</aside>
 
 <aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+And a success aside
 </aside>
 
-## Get a Specific Kitten
+## SubHeader 2
 
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2"
-  -H "Authorization: meowmeowmeow"
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
-}
-```
-
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
-
-### HTTP Request
-
-`GET http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
-
+Ex do commodo nulla in commodo veniam do anim deserunt. Duis duis magna duis proident nisi reprehenderit cillum aliquip enim dolore aute velit. Tempor et commodo laborum esse exercitation qui qui veniam incididunt culpa commodo dolore labore. Velit eiusmod fugiat quis magna consequat cupidatat cupidatat id fugiat ut tempor in velit eiusmod commodo cillum reprehenderit. Esse ea et eu culpa non fugiat sunt est consectetur mollit irure adipisicing do ex Lorem commodo quis. Velit nulla occaecat pariatur duis minim qui anim.

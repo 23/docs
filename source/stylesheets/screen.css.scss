@@ -2,6 +2,7 @@
 @import 'normalize';
 @import 'variables';
 @import 'icon-font';
+@import 'ttfont';
 
 /*
 Copyright 2008-2013 Concur Technologies, Inc.
@@ -188,9 +189,12 @@ html, body {
       padding-left: $nav-padding + $nav-indent;
       font-size: 12px;
     }
+    .tocify-item>a::before {
+      content: "— ";
+    }
 
     // for embossed look:
-    @include embossed-bg;
+
     &>li:last-child {
       box-shadow: none; // otherwise it'll overflow out of the subheader
     }
@@ -358,7 +362,7 @@ html, body {
     font-size: 30px;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #d7e3d8;
     margin-bottom: $h1-margin-bottom;
     margin-top: 2em;
     border-top: 1px solid #ddd;
@@ -375,7 +379,7 @@ html, body {
     font-size: 20px;
     margin-top: 4em;
     margin-bottom: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #d7e3d8;
     padding-top: 1.2em;
     padding-bottom: 1.2em;
     background-image: linear-gradient(to bottom, rgba(#fff, 0.4), rgba(#fff, 0));
